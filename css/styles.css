@@ -81,8 +81,7 @@ select:-webkit-autofill:focus {
 .container {
 	width: 100%;
 	max-width: 1264px;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding: 1rem 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -202,20 +201,39 @@ select:-webkit-autofill:focus {
 
 /* =======Button======= */
 .btn {
+	display: inline-block;
 	width: 100%;
 	border: none;
 	border-radius: 999px;
 	background-color: var(--lime-color);
-	padding: 1rem 2.5rem;
 	font-size: 1.125rem;
 	font-weight: 700;
 	line-height: 125%;
+	padding: 0;
 }
+
 .btn__inner {
-	display: flex;
+	width: 100%;
+	padding: 1rem 2.8rem;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+}
+
+.btn__inner-image {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.btn__inner-image img {
+	display: block;
+	width: 16.5px;
+	height: 19.5px;
 }
 
 /* =======Result Box======= */
