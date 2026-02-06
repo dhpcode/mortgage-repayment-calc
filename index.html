@@ -15,7 +15,87 @@
 
 <body>
   <div class="container">
-    
+    <div class="app">
+      <!-- FORM SIDE -->
+      <div class="form-box">
+
+        <!-- Form header -->
+        <div class="form-header">
+          <h1 class="form-box__heading">Mortgage Calculator</h1>
+          <a href="#" class="form-box__link">Clear all</a>
+        </div>
+
+        <!-- Form -->
+        <form class="form">
+
+          <!-- Amount -->
+          <div class="mortgage-amont">
+            <h2 class="label-style">Mortgage Amount</h2>
+            <div class="input-group">
+              <span>£</span>
+              <input type="number" name="number" />
+            </div>
+          </div>
+
+          <!-- Row -->
+          <div class="row">
+            <div class="mortgage-term">
+              <h2 class="mortgage-term__title label-style">Mortgage Term</h2>
+              <div class="input-group">
+                <input type="number" name="years" id="years">
+                <span>years</span>
+              </div>
+            </div>
+
+            <div class="interest-rate">
+              <h2 class="interest-rate__title label-style">Interest Rate</h2>
+
+              <div class="input-group">
+                <input type="number" name="number" id="number">
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mortgage type -->
+          <div class="mortgage-type">
+            <h2 class="label-style">Mortgage Type</h2>
+            <div class="radio-box">
+              <label>
+                <input type="radio" name="type">
+                Repayment
+              </label>
+            </div>
+            <div class="radio-box">
+              <label>
+                <input type="radio" name="type">
+                Interest only
+              </label>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <button class="btn">
+            <span class="btn__inner">
+              <img src="images/calculator.svg" alt="Calculator" width="17" height="20">
+              <span>Calculate Repayments</span></button>
+          </span>
+        </form>
+      </div>
+
+      <!-- Results -->
+      <div class="result-box">
+        <div class="result-box__img">
+          <img src="images/calculation.svg" alt="Calculation image" width="192" height="192">
+        </div>
+
+        <div class="result-box__content">
+          <h2>Results shown here</h2>
+          <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 
   <script src="js/main.js"></script>
