@@ -345,3 +345,31 @@ select:-webkit-autofill:focus {
 		padding: 2.5rem;
 	}
 }
+
+/* ========== 1024 px ========== */
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 65rem;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.app {
+		width: 63rem;
+		flex-direction: row;
+	}
+
+	.form-box {
+		width: 50%;
+		flex: 1;
+	}
+
+	.result-box {
+		justify-content: center;
+		width: 50%;
+		flex: 1;
+		border-bottom-left-radius: 80px;
+	}
+}
