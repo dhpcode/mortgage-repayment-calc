@@ -32,7 +32,7 @@ body {
 	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.5;
-	background-color: #fff;
+	background-color: var(--bg-color);
 	color: var(--text-color);
 }
 
@@ -194,6 +194,7 @@ select:-webkit-autofill:focus {
 	color: var(--dark-color);
 	display: flex;
 	gap: 16px;
+	cursor: pointer;
 }
 
 .radio-box input {
@@ -210,14 +211,19 @@ select:-webkit-autofill:focus {
 	font-weight: 700;
 	line-height: 125%;
 	padding: 0;
+	transition: 0.2s;
+	cursor: pointer;
 }
 
+.btn:hover {
+	opacity: 0.8;
+}
 .btn__inner {
 	width: 100%;
 	padding: 1rem 2.8rem;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 1rem;
 }
 
@@ -283,4 +289,53 @@ select:-webkit-autofill:focus {
 	only screen and (min-device-pixel-ratio: 2),
 	only screen and (min-resolution: 192dpi),
 	only screen and (min-resolution: 2dppx) {
+}
+
+@media screen and (min-width: 768px) {
+	/* ========TABLET========= */
+
+	.container {
+		padding: 40px;
+	}
+
+	/* ========== App ========== */
+	.app {
+		border-radius: 24px;
+		overflow: hidden;
+	}
+
+	/* ========Form Box======== */
+
+	.form-box {
+		padding: 40px;
+	}
+
+	/* ==========Form box header==========*/
+
+	/* ===========Form Header=========== */
+	.form-header {
+		flex-direction: row;
+		margin-bottom: 2.5rem;
+	}
+	.form-box__heading {
+		margin: 0;
+	}
+
+	/* ===============Row=================== */
+	.row {
+		flex-direction: row;
+	}
+
+	.row > div {
+		flex: 1 1 50%;
+	}
+	.btn {
+		max-width: 314px;
+		margin-top: 1.5rem;
+	}
+
+	.btn__inner {
+		gap: 12px;
+		padding: 16px 40px;
+	}
 }
