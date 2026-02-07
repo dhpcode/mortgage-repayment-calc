@@ -338,4 +338,10 @@ select:-webkit-autofill:focus {
 		gap: 12px;
 		padding: 16px 40px;
 	}
+
+	/* ========== Result box =========== */
+
+	.result-box {
+		padding: 2.5rem;
+	}
 }
